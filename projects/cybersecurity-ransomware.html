@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<meta name="description" content="Jiayue Wong Portfolio-site">
+		<title>Jiayue Wong | UXR & Data Analyst</title>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link id="favicon" rel="icon" type="image/svg+xml" href="../images/cake-coloured.svg">
+	    <link rel="stylesheet" href="../styles/reset.css">
+	    <link rel="stylesheet" href="../styles/main.css">
+	    <link rel="stylesheet" href="../styles/projects.css">
+	    <link rel="stylesheet" href="../styles/web-threats.css">
+	</head>
+	<body>
+		<header class="header-p">
+			<div class="logo-p">
+				<a href="../index.html" title="Homepage"><img src="../images/cake-coloured.png" alt="Slice of shortcake" height="130" width="130"><p>Jiayue &#9829;</p></a>
+			</div> 
+			<nav class="gn-p">
+				<ul class="robo-style">
+					<li><a href="../index.html#projects" title="Projects">Projects</a></li>
+					<li><a href="../about.html" title="About Me">About</a></li>
+					<li><a href="../resume/Jiayue_Wong_Resume_UXR.pdf" target="_blank" title="Resume">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="wrapper">
+			<div class="banner">
+			</div>
+			<h1 class="proj-head">Data Visualization: Cybersecurity Ransomware Attacks</h1>
+			<hr>
+			<div class="is-flex">
+				<section class="side-menu">
+					<ul>
+					    <li><a href="#overview">Overview</a></li>
+					    <li><a href="#collection">Data Collection</a></li>
+					    <li><a href="#ideation">Data Ideation</a></li>
+					    <li><a href="#reflection">Reflection</a></li>
+	 				</ul>
+				</section>
+				<section class="project-page">
+					<section id="overview">
+						<h2>Overview</h2>
+						<p>It is known that ransomware attacks are becoming increasingly prevalent and sophisticated over the past decade. These attacks involve malicious software that encrypts data, rendering it inaccessible until a ransom is paid to the attackers, typically in cryptocurrency. Trends indicate a sharp rise in both the number of attacks and the ransoms demanded. Cybersecurity websites like Krebs on Security regularly report on the latest incidents and tactics used by ransomware attack groups. Research articles and journals from IEEE analyze the technical and economic impacts of these attacks. There are also government reports from agencies like the FBI that provide static visual data on ransomware trends.</p>
+						<img src="../images/ransomware/virus.jpg" alt="Computer virus illustration" height="205" width="480">
+						<p>This project aims to visualize the trends and common themes of ransomware attacks using data from the past decade by analyzing patterns within the data. With the rising threats of ransomware affecting individuals, businesses and government; raising awareness about the prevalence and impacts of these attacks is crucial.</p>
+						<p><a class="viz" href="ransomware-viz/ransomware-viz.html" title="ransomware project" target="_blank">Click here</a> to try the interactive visualization!</p>
+					</section>
+					<hr class="thin">
+					<section id="collection">
+						<h2>Data Collection</h2>
+						<p>This dataset contains 638 data cases. Approximately 40% of the data cases were recorded ransomware attacks from 2021-2023. The data contains 32 data dimensions, 17 of which will provide helpful data towards the data visualizations.</p>
+						<p>The data cases are various global ransomware attacks that happened between 2013 and 2023. The data dimensions are targeted organization, sector the organization is in, organization size, company revenue, revenue during the date of attack, ransom cost, if ransom paid, time of attack, location of company/attack, description of attack, type of ransomware, stock symbol, amount of employees, source URL.</p>
+						<p>The data is publicly available and was able to be downloaded in a CSV format. The data requires little processing.</p>
+						<h3>Why is this Important?</h3>
+						<p>As a computer science student, understanding ransomware attacks can be beneficial to our future careers. Ransomware represents significant and growing threats to individuals, businesses, and governments making it imperative for us to understand. By visualizing the data, I hope to uncover trends and patterns that are not immediately apparent in the raw data.</p>
+						<p>There were some initial interesting data questions:</p>
+						<ul class="list">
+							<li>Does the time of year / month have any correlation with the targeted sector of the attack? (Do academic sector attacks die down during the summer? Do government sector attacks flare up during tax season?)</li>
+							<li>Are there any relationships between geographical factors, the size of an organization, or the likelihood and cost of a ransomware attack?</li>
+							<li>What are the most common characteristics of organizations that chose to pay the ransom and those who do not?</li>
+						</ul>
+					</section>
+					<hr class="thin">
+					<section id="ideation">
+					    <h2>Design Ideation</h2>
+					    <p class="end-p">Initially there were some different visualization sketches drawn up. Although majority of the ideas weren't used, they helped narrow down on important features that should be added to the final visualization. Below are some of the sketches that were created:</p>
+					    <ul class="des-list">
+					    	<li>
+					    		<img src="../images/ransomware/bar-chart.png" alt="Bar chart sketch" height="200" width="622">
+					    		<p>This sketch shows a histogram-like distribution of the frequency of attacks per sector based on the month of the attack. An option is given to change the height of the graph to either represent frequency (how many attacks happened in the specified sector during this month) or collective revenue of companies (sum of the revenue from the affected companies of the specified sector during this month). Adding this option should allow users to see the difference between a month being flooded with many small attacks, or a small amount of large attacks.</p>
+					    	</li>
+					    	<li>
+					    		<img src="../images/ransomware/map-sketch.png" alt="Map sketch" height="350" width="622">
+					    		<p>This sketch shows a global map of the 6 major continents alongside an additional land plot to represent any ransomware attack that targeted the globe. This map would be interactive and allow you to zoom in or out which would incrementally show more ransomware attacks as you zoom in (since displaying too many would clutter the map). The user is able to control many filters such as sector, whether ransom is paid, what the size of the points represents, and the date range shown.</p>
+					    	</li>
+					    	<li>
+					    		<img src="../images/ransomware/radial-chart.png" alt="Radial chart sketch" height="440" width="706">
+					    		<p>This sketch shows a radar graph displaying various business sectors as its axes, each representing a different industry such as health care, finance, tech, retail. etc. Each axis extends from the center of the graph with concentric circles (could also be a polygon for better visual appeal) indicating the number of successful ransomware attacks. Different types of ransomware are plotted on the graph as distinct data shapes represented by unique colour hues. There are filters on the side to allow the users to filter from multipurpose ransomware to ones that are better at attacking specified sectors. This design is simple and visually interesting which can help in maintaining audience attention and presents complex data in an easily digestible way.</p>
+					    	</li>
+					    </ul>
+					    <h3>Creating the Visualization</h3>
+					    <p>This project was done using <a href="https://d3js.org/" title="D3.js website" target="_blank">D3.js</a> which is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. D3 has examples of what can be created on its' website, so I took a look and went from there.</p>
+					    <p>I used a combination of visual encodings (2d size, 1d size, colour hue) to effectively communicate the data of ransomware attacks. The circle packing chart was the main focus with the size of each circle representing the revenue of the organization. Larger circles corresponded to higher revenues, providing an immediate visual cue about the relative scale of each organization. The circles are colour coded based on the organizations response to the ransom demands - paid, refused, or unknown. The colour encoding helps quickly identify trends or patterns across differing groupings. Additionally there is a hover effect that goes into more detail about the organization.</p>
+					    <img src="../images/ransomware/hover-effect.png" alt="hover effect in the visualization" height="115" width="922">
+					    <p>The histogram shows the occurrences of ransomware attacks either yearly or monthly (axis changes based off of a drop down). This temporal data dimension adds context to the data allowing users to see the frequency of attacks and identify any trends whether seasonal or long term. There is also a pie chart that summarizes the proportion of organizations that have paid the ransom or refused; this offers a picture of the overall landscape. This dashboard view ensures that all the data points are visually connected enhancing the ability to draw insights from correlations between all the charts.</p>
+					    <img src="../images/ransomware/histogram.png" alt="histogram" height="414" width="478">
+					    <p>The interactive elements are a key feature of this visualization. The circle packing chart offers 3 different drop down menus to group the data by different factors on varying depths. The graph is grouped in the first depth by continent, then country, and lastly sector. Clicking into each encompassing circle will zoom the graph into the next depth. The interactivity allows users to customize and focus their view on specific aspects of the data that are relevant to their interest and needs (relationships between geographical factors, size of an organization, likelihood attack, etc.). When changing the focus on the circle chart the histogram and pie chart will live update its data to ensure that all visualizations remain synchronized. This provides a cohesive and responsive user experience.</p>
+					    <div class="row">
+					    	<img src="../images/ransomware/overview.png" alt="overview of circle packing chart" height="400" width="400">
+					    	<img src="../images/ransomware/zoomed.png" alt="zoomed in circle packing chart" height="400" width="400">
+					    </div>
+					    <p>To ensure accessibility I chose to use a colour pallet with the “intention of being accessible to people who are colorblind” (<a href="https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40" title="colour blindness page" target="_blank">David Nichols</a>) from the IBM Design Library. This pallet was chosen since there is a limited number of colour hues used (4-5 in the whole visualization). These colours allow users to interpret the encodings accurately, as well as lend the visualization some aesthetic and visual appeal. Before finalizing the colour choices for the visualization I had someone with deuteranomaly (red-green color vision deficiency) to test the accessibility of the colours used. There is also a legend attached to the circle packing chart that identifies the colour hues displayed in the chart, this is there to assist users in connecting the data encoding to the data.</p>
+					    <img src="../images/ransomware/colour-pallet.png" alt="colour pallet" height="110" width="335">
+					</section>
+					<hr class="thin">
+					<section id="reflection">
+					    <h2>Reflection</h2>
+					    <p>This project presented a unique opportunity to develop technical, analytical, and collaborative skills through the creation of an interactive site that visualized key trends in global ransomware attacks. The project’s goal was to explore critical questions about ransomware, translating real-world data into a visually engaging format to uncover insights regarding attack patterns across different sectors and regions.</p>
+					    <p>Since I knew little about working with the D3.js library, I collaborated with my others to help create my vision of the visualization. The collaborative aspect of the project played a significant role in its success. We worked together to discuss data visualization techniques and solve technical challenges. This teamwork fostered creativity and enabled issues to be resolved quickly, particularly when balancing design aesthetics with the functionality of the visualizations.</p>
+					    <p>One of the primary technical challenges was effectively representing multiple data dimensions—such as company revenue, location, and ransom payment status—while maintaining an intuitive user interface. Through several design iterations, the final solution featured a circle packing chart, histogram, and pie chart, allowing users to interactively explore the data. These elements provided insights into trends, such as correlations between the time of year and sector-specific attacks, as well as patterns related to ransom payment decisions based on geographic location.</p>
+					    <p>The project also highlighted the critical role of human interpretation in data analysis. While the visualizations revealed important trends, it required careful consideration to fully understand the complexities and avoid misleading conclusions. For example, the observed decline in tech sector attacks may not solely indicate stronger security but could reflect shifting attacker focus. Similarly, the apparent concentration of ransomware incidents in North America and Europe might be influenced by dataset biases rather than true global patterns. This reinforced the importance of combining visual data representation with contextual analysis to draw accurate conclusions.</p>
+					    <p>This project advanced both my technical and analytical skills in data visualization while demonstrating how data can be used to tell compelling stories. It combines the importance of thoughtful design in communicating complex insights and emphasized the responsibility of accurately interpreting and presenting data.</p>
+					    <img src="../images/cat.png" alt="a sleepy cat" height="300" width="300">
+					</section>
+				</section>
+			</div>
+		</main>
+		<footer id="get-in-touch">
+			<div class="contact-p">
+				<p>Don't be shy, contact me anytime!</p>
+				<ul>
+					<li><a class="link" href="mailto:jiayue.cw@gmail.com" title="Email me">jiayue.cw@gmail.com</a></li>
+					<li><a class="link" href="https://www.linkedin.com/in/jiayue-wong" title="linkedin" target="_blank">LinkedIn</a></li>
+					<li><a class="link" href="https://github.com/cronchyjia" title="github" target="_blank">Github</a></li>
+				</ul>	
+			</div>
+			<p class="thanks-p">&#x2661; Thanks for stoping by &#x2661;</p>
+			<p class="copywrite-p">&copy;2024 - Jiayue Wong : Made with love and fruit</p>
+		</footer>
+		<script src="../scripts/main.js"></script>
+	</body>
+</html>
