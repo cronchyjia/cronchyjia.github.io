@@ -1,0 +1,81 @@
+/*------------------------------------------------
+Page Styling
+------------------------------------------------*/
+.banner {
+    background-image: url('../images/cat.png');
+}
+
+.green {
+    background: #84f38485;
+}
+
+.blue {
+    background: #009fff6b;
+}
+
+.pink {
+    background: #ffbecacc;
+}
+
+.centered {
+    display: block;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------
+Overview
+------------------------------------------------*/
+.txt-img-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+.txt-img-container p {
+    max-width: 500px;
+}
+
+.txt-img-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+/*------------------------------------------------
+Bullet List Styling
+------------------------------------------------*/
+.list {
+    list-style-type: disc;
+    padding-left: 65px;
+    margin-bottom: 30px;
+}
+
+.list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #2b2b2b;
+}
+
+.list li::marker {
+    color: #5cb1ef;
+}
+
+.list li:last-child {
+    margin-bottom: 0;
+}
+
+.row {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.hover {
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover:hover {
+    transform: scale(1.7);
+    z-index: 1;
+}
