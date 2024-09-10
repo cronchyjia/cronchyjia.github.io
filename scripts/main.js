@@ -28,18 +28,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Change document title and favicon on window blur and focus
     let title = document.title;
-    let favicon = document.getElementById('favicon');
-    let originalFaviconHref = favicon.href;
-    let sadEmojiFavicon = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>👻</text></svg>';
+    // let favicon = document.getElementById('favicon');
+    // let originalFaviconHref = favicon.href;
+    // let ghostEmojiFavicon = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>👻</text></svg>';
 
     window.addEventListener('blur', () => {
         document.title = 'COME BACK! | Jiayue\'s Portfolio';
-        favicon.href = sadEmojiFavicon;
+       // favicon.href = ghostEmojiFavicon;
     });
 
     window.addEventListener('focus', () => {
         document.title = title;
-        favicon.href = originalFaviconHref;
+       // favicon.href = originalFaviconHref;
     });
 
     // Active side menu event
