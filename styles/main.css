@@ -7,8 +7,8 @@ body {
 
 .gradient {
 	background: linear-gradient(3deg, #fffbf4 76%, rgb(253 216 216) 89%);
-    	width: 100%;
-    	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .cream-back {
@@ -28,10 +28,10 @@ a {
 .txt-decor::after {
 	position: absolute;
 	content: '';
-	display: block;
-	width: 80px;
-	height: 1px;
-	border-radius: 3px;
+    display: block;
+    width: 80px;
+    height: 1px;
+    border-radius: 3px;
 }
 
 .is-flex {
@@ -40,19 +40,19 @@ a {
 
 .light-pink-lines{
 	border-left: 1px solid rgba(245, 223, 214, 1);
-    	border-right: 1px solid rgba(245, 223, 214, 1);
+    border-right: 1px solid rgba(245, 223, 214, 1);
 }
 
 .dark-pink-lines{
-	border-left: 1px solid rgb(239 206 192);
-	border-right: 1px solid rgb(239 206 192);
+    border-left: 1px solid rgb(253 216 216);
+    border-right: 1px solid rgb(253 216 216);
 }
 
 hr {
-	border: none;
-	height: 2px;
-	background-color: #333;
-	margin: 20px 0;
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
 }
 
 /*------------------------------------------------
@@ -65,7 +65,7 @@ Typography
 }
 
 .noto-sans {
-	font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 }
@@ -74,17 +74,17 @@ Typography
 Header / Global Navigation
 ------------------------------------------------*/
 .header {
-	position: sticky;
-	top: 0;
-	background-color: white;
-	height: 0;
-	width: 1300px;
-	padding: 0;
-	margin: 0 auto;
-	z-index: 1000;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 0;
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
@@ -115,9 +115,9 @@ Header / Global Navigation
 }
 
 .gn .txt-decor::after {
-	background: #3b3b3b;
-	left: -7px;
-	bottom: 0;
+    background: #3b3b3b;
+    left: -7px;
+    bottom: 0;
 }
 
 .gn a:hover {
@@ -149,13 +149,13 @@ Introduction
 .intro h1 {
 	text-align: center;
 	border-bottom: 2px solid rgba(245,237,231,1);
-	border-left: 2px solid rgba(245,237,231,1);
-	border-right: 2px solid rgba(245,237,231,1);
-	font-size: 80px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	color: #3b3b3b;
-	padding: 135px 0 95px 0;
+    border-left: 2px solid rgba(245,237,231,1);
+    border-right: 2px solid rgba(245,237,231,1);
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #3b3b3b;
+    padding: 135px 0 95px 0;
 }
 
 .container {
@@ -190,13 +190,13 @@ Projects
 ------------------------------------------------*/
 .projects {
 	border-left: 1px solid rgba(245, 223, 214, 1);
-	border-right: 1px solid rgba(245, 223, 214, 1);
-	margin-bottom: 70px;
+    border-right: 1px solid rgba(245, 223, 214, 1);
+    margin-bottom: 70px;
 }
 
 .projects h2 {
-	font-size: 30px;
-	padding: 55px 0 0 45px;
+    font-size: 30px;
+    padding: 55px 0 0 45px;
 }
 
 .projects h3 {
@@ -204,50 +204,50 @@ Projects
 }
 
 .project-item {
-	margin: 0 auto;
-	position: relative;
-	width: 100%;
-	max-width: 500px;
-	display: flex;
-	justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
 }
  .project-item + .project-item{
  	padding-top: 50px;
  }
 
 .projects .txt-decor::after{
-	width: 280%;
-	background: rgb(239 206 192);
-	bottom: -25px;
+    width: 280%;
+    background: rgb(239 206 192);
+    bottom: -25px;
 }
 
 .project-item img {
-	width: 100%;
-	height: auto;
-	border-radius: 24px;
-	max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    max-width: 500px;
 }
 
 .project-hover {
-	position: absolute;
-	bottom: 5%;
-	left: 5%;
-	width: 90%;
-	height: 30%;
-	background: rgba(107, 141, 104, 0.97);
-	color: #ededed;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	text-align: center;
-	border-radius: 16px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+    background: rgba(107, 141, 104, 0.97);
+    color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    border-radius: 16px;
 }
 
 .project-item:hover .project-hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 /*------------------------------------------------
