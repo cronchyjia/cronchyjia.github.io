@@ -190,13 +190,13 @@ Projects
 ------------------------------------------------*/
 .projects {
 	border-left: 1px solid rgba(245, 223, 214, 1);
-    border-right: 1px solid rgba(245, 223, 214, 1);
-    margin-bottom: 70px;
+	border-right: 1px solid rgba(245, 223, 214, 1);
+	margin-bottom: 70px;
 }
 
 .projects h2 {
-	font-size: 24px;
-	padding: 20px;
+	font-size: 30px;
+	padding: 55px 0 0 45px;
 }
 
 .projects h3 {
@@ -204,50 +204,50 @@ Projects
 }
 
 .project-item {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    justify-content: center;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	justify-content: center;
 }
  .project-item + .project-item{
  	padding-top: 50px;
  }
 
 .projects .txt-decor::after{
-    width: 280%;
-    background: rgb(239 206 192);
-    bottom: -25px;
+	width: 280%;
+	background: rgb(239 206 192);
+	bottom: -25px;
 }
 
 .project-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 24px;
-    max-width: 500px;
+	width: 100%;
+	height: auto;
+	border-radius: 24px;
+	max-width: 500px;
 }
 
 .project-hover {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    width: 90%;
-    height: 30%;
-    background: rgba(107, 141, 104, 0.97);
-    color: #ededed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    border-radius: 16px;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	width: 90%;
+	height: 30%;
+	background: rgba(107, 141, 104, 0.97);
+	color: #ededed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	text-align: center;
+	border-radius: 16px;
 }
 
 .project-item:hover .project-hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 /*------------------------------------------------
