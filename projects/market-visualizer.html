@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTPZDVK158"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-HTPZDVK158');
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+		<meta name="description" content="Jiayue Wong Portfolio-site">
+		<title>Jiayue Wong | Grocery Assistant Project</title>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link id="favicon" rel="icon" type="image/svg+xml" href="../images/cake-coloured.svg">
+	    <link rel="stylesheet" href="../styles/reset.css">
+	    <link rel="stylesheet" href="../styles/main.css">
+	    <link rel="stylesheet" href="../styles/projects.css">
+	    <link rel="stylesheet" href="../styles/market-visualizer.css">
+	</head>
+	<body>
+		<header class="header-p">
+			<div class="logo-p">
+				<a href="../index.html" title="Homepage"><img src="../images/cake-coloured.png" alt="Slice of shortcake" height="130" width="130"><p>Jiayue &#9829;</p></a>
+			</div> 
+			<nav class="gn-p">
+				<ul class="robo-style">
+					<li><a href="../projects.html" title="Projects">Projects</a></li>
+					<li><a href="../about.html" title="About Me">About</a></li>
+					<li><a href="../resume/Jiayue_Wong_Resume.pdf" target="_blank" title="Resume">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="wrapper">
+			<div class="banner">
+			</div>
+			<h1 class="proj-head">Data Physicalization: Marketing Helper</h1>
+			<hr>
+			<div class="is-flex">
+				<section class="side-menu">
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#aim">Aim &#38; Purpose</a></li>
+                        <li><a href="#design">Design Decisions</a></li>
+                        <li><a href="#prototype">Prototype</a></li>
+                        <li><a href="#future">Future Steps</a></li>
+                        <li><a href="#references">References</a></li>
+                        <li><a href="#appendix">Appendix</a></li>
+                    </ul>
+                </section>
+                <section class="project-page">
+                    <section id="overview">
+                        <h2>Overview</h2>
+                        <p>Targeted marketing is crucial for increasing a business’ profitability by focusing advertising on consumers most likely to purchase the item, thereby boosting ad-click rates and engagement. Research shows that relevant targeted ads encourage people to keep browsing and help make information more useful to consumers <a href="#ref-1" id="top-1" class="ref">[1]</a>. Traditionally, companies conduct research to identify their target audience and analyze the data using visualization tools like Excel, Tableau, and Power BI <a href="#ref-2" id="top-2" class="ref">[2]</a>. Managers use these visualizations to explore and solve business problems, such as identifying seasonal trends that could affect sales <a href="#ref-3" id="top-3" class="ref">[3]</a>.</p>
+                        <img src="../images/market-vis/map.png" alt="targeted marketing" height="255" width="400">
+                        <p>Motivated by the benefits of data physicalization, we aim to develop an alternative method for exploratory visualization. Data physicalization improves communication and collaboration in small groups, encouraging deeper discussions and broader perspectives compared to traditional visualization tools. This approach proves especially valuable in addressing broader challenges, encouraging a focus on exploration over narrowly defined answers <a href="#ref-4" id="top-4" class="ref">[4]</a>.</p>
+                        <p>Online advertising presents numerous targeting strategies, and small businesses often struggle to manage these strategies due to limited resources or lack of expertise. Additionally, these businesses need efficient data analysis to maximize their return on investments (ROI) and minimize errors. We want our Creativity Support Tool (CST) to use data physicalization to provide an intuitive and collaborative way for small businesses to explore their marketing data&#8212;allowing effective advertising decisions without extensive resources or specialized knowledge.</p>
+                    </section>
+                    <hr class="thin">
+                    <section class="aim" id="aim">
+                    	<h2>Aim &#38; Purpose</h2>
+                    	<p>The CST is designed to assist small business owners (in this instance, those in the fashion industry), make informed marketing and advertising decisions. By interacting with the tool, users can visualize where specific products are most popular based on demographic factors such as age, gender, and product preferences. This interactive approach is especially beneficial for those who lack the budget to test different audiences or wish to target niche markets. The visualization provides clear guidance on where to focus marketing effort to maximize sales.</p>
+ 						<p>Given that marketing budgets are often limited, choosing the wrong geographical areas for advertising or product placement can result in wasted resources <a href="#ref-5" id="top-5" class="ref">[5]</a>. Moreover, many small business owners and new entrepreneurs may not have extensive experience with data visualization tools. Our system offers these users an alternative, more intuitive way to explore data by transforming complex marketing information into a physical, tangible form.</p>
+ 						<img src="../images/market-vis/info-viz.jpg" alt="info visulization charts" height="334" width="550">
+ 						<p>The CST encompasses creativity-focused features. The interactivity of the system allows users to explore market areas in an open-ended manner, promoting creative thinking. This system also assists in everyday problem-solving and aids in innovative thinking in daily business operations. For our users, which are small fashion-based business owners, it aids in creatively exploring market data to guide their decisions.</p>
+ 						<p>The system positively influences users of varying expertise in different phases of the creative process. While especially beneficial to those unfamiliar with traditional data visualization tools, it is also valuable for those who are experienced. Research shows that humans may learn more effectively from tangible data representations <a href="#ref-6" id="top-6" class="ref">[6]</a>, so users at all expertise levels can benefit from this tool.</p>
+ 						<p>This system supports multiple phases of the creative process <a href="#ref-7" id="top-7" class="ref">[7]</a>: <strong class="bold">Exploration, Ideation, and Evaluation</strong>.</p>
+ 						<ul class="aim-list">
+ 							<li>
+ 								<img src="../images/market-vis/exploration.png" alt="exploration" height="136" width="136">
+ 								<p>Users freely experiment by inserting different combinations to discover data patterns: promoting creative thinking and hypothesis testing</p>
+ 							</li>
+ 							<li>
+ 								<img src="../images/market-vis/ideation.png" alt="ideation" height="136" width="136">
+ 								<p class="move-down">Users generate ideas based on their interactions and the resulting visualizations</p>
+ 							</li>
+ 							<li>
+ 								<img src="../images/market-vis/evaluation.png" alt="evaluation" height="136" width="136">
+ 								<p>Users assess the effectiveness of their marketing ideas by interacting with the data and adjusting their strategies based on feedback from the CST</p>
+ 							</li>
+ 						</ul>
+                    </section>
+                    <hr class="thin">
+                    <section id="design">
+                    	<h2>Design Decisions</h2>
+                    	<div class="is-flex supplies">
+	                    	<ul>
+	                    	<p>This CST was prototyped using:</p>
+	                    		<li>Arduino UNO kit</li>
+	                    		<li>Laser cut board</li>
+	                    		<li>Aluminium foil</li>
+	                    		<li>Cardboard + Paper</li>
+	                    	</ul>
+                    		<img src="../images/market-vis/full-setup.jpg" alt="full tool setup" height="355" width="570">
+                    	</div>
+                    	<p>The data is represented physically through a wooden board with cutout shapes for different categories (product type, age, gender), that are based on our dataset and can be used in queries. Each shape is tied to a data input, and when pieces are inserted into the board, the maps light up based on the inputted combination.</p>
+                    	<p>Physical cutouts were used to represent the user’s query as it engages users in a tactile way. There are several studies that show the benefit of tactile engagement when it comes to learning. Tactile interaction helps maintain attention to current tasks. One study found that participants who underwent tactile training experienced less mind wandering. This is important as the CST helps users find the best area to market a product, which may require several queries and comparisons. By incorporating tactile elements, it helps users stay focused and engaged throughout the process <a href="#ref-8" id="top-8" class="ref">[8]</a>.</p>
+                    	<p>Research has shown using a Tangible User Interface (TUI) instead of a Graphical User Interface (GUI) during collaborative design helps with cognitive offload due to the hands-on approach of the system. Using a TUI also enhances conceptual thoughts and leads to deeper insights <a href="#ref-9" id="top-9" class="ref">[9]</a>. In traditional interactive GUIs (data visualization tools), users filter queries by clicking on different buttons representing various categories, however, this method may make it harder for users to conceptualize the full query. Our system makes it easier to do so by laying out physical objects for users to manipulate and view directly.</p>
+                    	<p>On the map, the brightness of the LED indicates the top regions for product popularity; the color of the LED represents the most popular color of the product(s) in that region. The map was designed to light up immediately after a query is made to provide instant visual feedback to the user. The immediate feedback reinforces the connection between the user’s input and the resulting data visualization&#8212;aiding in the user’s engagement and comprehension. Map-based visualizations are effective because they combine the abilities to interpret spatial patterns, as well as creativity, with computational data processing <a href="#ref-10" id="top-10" class="ref">[10]</a>.Given the dataset constraints and the capabilities of the Arduino's, a choice to display both geographical data and item color with LEDs was made.</p>
+                    	<img src="../images/market-vis/map-lights.jpg" alt="map with lights on" height="450" width="572">
+                    	<ul class="data-types">
+                    	 	<h3>Data Types:</h3>
+                    	 	<li>
+                    	 		<p>Popular item color</p>
+                    	 		<p>This nominal data type was coded using different LED hues, as nominal data is best represented by distinct values</p>
+                    	 	</li>
+                    	 	<li>
+                    	 		<p>In demand regions</p>
+                    	 		<p>This ordinal data type, is represented by varying the brightness levels of the LEDs; ordinal data is effectively shown using different saturation levels within a single color hue <a href="#ref-11" id="top-11" class="ref">[11]</a>.</p>
+                    	 	</li>
+                    	 	<li>
+                    	 		<p>Region sectioning</p>
+                    	 		<p>We drew different arbitrary patterns on the regions of the map to help users differentiate the regions.To make things simpler to implement, the map was sectioned into 6 different sections. The map was first sectioned into north and south (the climates varies widely and affects types of items chosen), then into 6 sections based on population density (Arduino constraints only allowed for 6 sections).</p>
+                    	 		<img src="../images/market-vis/usa-map.jpg" alt="map sectioned into six" height="430" width="560">
+                    	 	</li>
+                    	</ul>
+                    	<p>Data-related queries of where to market products; using information from the tool:</p>
+                    	<ul class="queries">
+                    	 	<li><p>Identifying regions where a specific product is popular among certain certain age groups or genders</p></li>
+                    	 	<li><p>Analyzing how different demographic groups influence the sales of a particular product across various regions</p></li>
+                    	 	<li><p>Discovering overall product popularity trends in specific regions without filtering by demographics</p></li>
+                    	</ul>
+                    </section>
+                    <hr class="thin">
+                    <section id="prototype">
+                    	<h2>Prototype</h2>
+						<p>The user starts off by thinking of a query, then inserting pieces into the wooden cutout board that correlate with the query. Each piece corresponds to a product type, age group, or gender.</p>
+						<div class="pieces is-flex">
+							<ul>
+								<p>There are a total of 9 pieces that have been laser cut out of a plank of wood:</p>
+								<li>4 categories (shoes, accessories, clothing, and outerwear)</li>
+								<li>3 age groups (the data only consist of people over the age of 18)</li>
+								<li>2 genders</li>
+							</ul>
+						</div>
+						<div class="is-flex boards">
+							<img src="../images/market-vis/cutouts.jpg" alt="the pieces of the board" height="295" width="430">
+							<img src="../images/market-vis/cutouts-in-board.jpg" alt="the baord with pieces in" height="295" width="430">
+							</div>
+						<p>When the pieces are placed into the board, a circuit is completed and the map lights up! The user then looks over at the map. Three regions on the map lights up based on the query that is completed by the user. A cardboard box was used to hold up the map and Arduino. The Arduino and breadboard are placed on top of the box and secured with tape.</p>
+						<img class="bot-mar" src="../images/market-vis/breadboard-w-leds.png" alt="breadboard and arduino" height="385" width="362">
+						<p>The paper map is then placed and secured with tape on top of the flat side of the cardboard box. The colors and numbers of LEDs were chosen strategically to satisfy both component constraints and the LEDs needed for our designed scenarios.</p>
+						<img src="../images/market-vis/map-light.jpg" alt="map with lights on" height="388" width="385">
+					</section>
+					<hr class="thin">
+					<section id="future">
+						<h2>Future Changes</h2>
+						<p>Ideally, any query completed would trigger the map to light up, but due to the constraint of not having enough Arduino digital pins, the user has to choose between a set number of scenarios to query. There were three different scenarios made for users to try and see how this system works. The prototype was designed this way due to time and Arduino constraints. If the system were to be rebuilt to include every combination of possible scenarios (combinations of the cutout pieces), an alternative way to "complete the circuit" and light up the map would need to be used. With the constraints, the prototype used aluminum foil on the backs of the cutout shapes and the board to register and light up the LEDs when a query has been completed. Ideally the user would be able to come up with any scenario and insert pieces based on their ideas.</p>
+						<img src="../images/market-vis/back-of-board.jpg" alt="aluminium circuit" height="388" width="385">
+					</section>
+                    <hr class="thin">
+                    <section id="references">
+                    	<h2>References</h2>
+                    	<ol class="ref-list">
+                    		<li id="ref-1">
+                    			<p><a href="#top-1" class="ref">[1]</a></p>
+                    			<p>“Data Analysis and Visualization Techniques,” SCU, Dec. 12, 2023.
+                    				<a href="https://onlinedegrees.scu.edu/media/blog/data-analysis-and-visualization-techniques" target="_blank">https://onlinedegrees.scu.edu/media/blog/data-analysis-and-visualization-techniques</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-2">
+                    			<p><a href="#top-2" class="ref">[2]</a></p>
+                    			<p>Y. Li, R. Wu, J. Liu, and S. Wang, “The Impact of Targeted Online Advertising’s Pushing Time on Consumers’ Browsing Intention,” Journal of Global Information Management, vol. 31, no. 1, pp. 1–17, Mar. 2023, doi:
+                    				<a href="https://doi.org/10.4018/jgim.319713" target="_blank"> https://doi.org/10.4018/jgim.319713</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-3">
+                    			<p><a href="#top-3" class="ref">[3]</a></p>
+                    			<p>S. Berinato, “Visualizations That Really Work,” Harvard Business Review, Jun. 2016.
+                    				<a href="https://hbr.org/2016/06/visualizations-that-really-work" target="_blank">https://hbr.org/2016/06/visualizations-that-really-work</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-4">
+                    			<p><a href="#top-4" class="ref">[4]</a></p>
+                    			<p>E. Niculescu and M. Forslund, “Data Visualization vs Data Physicalization for Group Collaboration,” DIVA, 2023.
+                    				<a href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1778297&dswid=8161" target="_blank">https://kth.diva-portal.org/smash/record</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-5">
+                    			<p><a href="#top-5" class="ref">[5]</a></p>
+                    			<p>G. Iyer, D. Soberman, and J. M. Villas-Boas, “The Targeting of Advertising,” Marketing Science, vol. 24, no. 3, pp. 461–476, Aug. 2005, doi:
+                    				<a href="https://doi.org/10.1287/mksc.1050.0117" target="_blank">https://doi.org/10.1287/mksc.1050.0117</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-6">
+                    			<p><a href="#top-6" class="ref">[6]</a></p>
+                    			<p> Y. Jansen et al., “Opportunities and Challenges for Data Physicalization,” New York, NY, USA: ACM, 2015, pp. 3227–3236. doi: 
+                    				<a href="https://doi.org/10.1145/2702123.2702180" target="_blank">https://doi.org/10.1145/2702123.2702180</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-7">
+                    			<p><a href="#top-7" class="ref">[7]</a></p>
+                    			<p> R. K. Sawyer, “The iterative and improvisational nature of the creative process,” Journal of Creativity, vol. 31, p. 100002, Oct. 2021, doi:
+                    				<a href="https://doi.org/10.1016/j.yjoc.2021.100002" target="_blank">https://doi.org/10.1016/j.yjoc.2021.100002</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-8">
+                    			<p><a href="#top-8" class="ref">[8]</a></p>
+                    			<p>Y. Luo and J. Zhang, “The Effect of Tactile Training on Sustained Attention in Young Adults,” Brain Sciences, vol. 10, no. 10, p. 695, Oct. 2020, doi: 
+                    				<a href="https://doi.org/10.3390/brainsci10100695" target="_blank">https://doi.org/10.3390/brainsci10100695</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-9">
+                    			<p><a href="#top-9" class="ref">[9]</a></p>
+                    			<p>M. J. Kim and M. L. Maher, “The impact of tangible user interfaces on spatial cognition during collaborative design,” Design Studies, vol. 29, no. 3, pp. 222–253, May 2008, doi:
+                    				<a href="https://doi.org/10.1016/j.destud.2007.12.006" target="_blank">https://doi.org/10.1016/j.destud.2007.12.006</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-10">
+                    			<p><a href="#top-10" class="ref">[10]</a></p>
+                    			<p>M. Nöllenburg, “Geographic Visualization,” Human-Centered Visualization Environments, pp. 257–294, 2006, doi:
+                    				<a href="https://doi.org/10.1007/978-3-540-71949-6_6" target="_blank">https://doi.org/10.1007/978-3-540-71949-6_6</a>
+                    			</p>
+                    		</li>
+                    		<li id="ref-11">
+                    			<p><a href="#top-11" class="ref">[11]</a></p>
+                    			<p>S. Schlosser, “Visual Variables,” Pressbooks.pub, 2024.
+                    				<a href="https://colorado.pressbooks.pub/makingmaps/chapter/chapter-4-visual-variables" target="_blank">https://colorado.pressbooks.pub/makingmaps/chapter/chapter-4-visual-variables</a>
+                    			</p>
+                    		</li>
+                    	</ol>
+                    </section>
+                    <hr class="thin">
+                    <section id="appendix">           	
+                    	<h2>Appendix</h2>
+                    	<ul class="appendix">
+                    		<li><a href="https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset" target="_blank">&#42; Public Dataset on Consumer Behavior and Shopping Habits</a></li>
+                    		<li><a href="https://docs.google.com/spreadsheets/d/1ih29nPR2eCvODWsusW1WW1H1L0Hp79WHal7KG3IEn20/edit?gid=1739354182#gid=1739354182" target="_blank">&#42;&#42; Includes both the parched data for different scenarios and the raw data in different sheets</a></li>
+                    	</ul>
+                    </section>
+                </section>
+			</div>
+		</main>
+		<footer id="get-in-touch">
+			<div class="contact-p">
+				<p>Don't be shy, contact me anytime!</p>
+				<ul>
+					<li><a class="link" href="mailto:jiayue.cw@gmail.com" title="Email me">jiayue.cw@gmail.com</a></li>
+					<li><a class="link" href="https://www.linkedin.com/in/jiayue-wong" title="linkedin" target="_blank">LinkedIn</a></li>
+					<li><a class="link" href="https://github.com/cronchyjia" title="github" target="_blank">Github</a></li>
+				</ul>	
+			</div>
+			<p class="thanks-p">&#x2661; Thanks for stoping by &#x2661;</p>
+			<p class="copywrite-p">&copy;2024 - Jiayue Wong : Made with love and fruit</p>
+		</footer>
+		<script src="../scripts/main.js"></script>
+	</body>
+</html>

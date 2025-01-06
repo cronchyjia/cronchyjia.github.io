@@ -1,0 +1,137 @@
+/*------------------------------------------------
+Page styling
+------------------------------------------------*/
+.banner {
+    background-image: url('../images/apple.png');
+}
+
+img {
+    border-radius: 16px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.story h3 {
+    padding: 10px 0 0 102px;
+}
+
+.story p {
+    padding: 0 0 10px 133px;
+    width: 85%;
+}
+
+.centered {
+    align-items: center;
+}
+
+.top {
+    padding-top: 15px;
+}
+
+/*------------------------------------------------
+Design
+------------------------------------------------*/
+.center {
+    padding-top: 30px;
+    align-items: center;
+    gap: 35px;
+}
+
+/*------------------------------------------------
+Prototype
+------------------------------------------------*/
+.supplies {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.supplies ul {
+    margin-left: 10px;
+}
+
+.supplies li {
+    text-align: center;
+    padding-bottom: 8px;
+    color: #414141;
+}
+
+.supplies img {
+    margin: 0 0 0 60px;
+}
+
+.colours {
+    padding-left: 55px;
+}
+
+.colours li {
+    padding-bottom: 15px;
+}
+
+.red {
+    background: #ff6868;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: #10e510;
+}
+
+/*------------------------------------------------
+References
+------------------------------------------------*/
+.related li p:first-of-type {
+    text-decoration: underline;
+}
+
+.related li p:last-of-type {
+    margin-left: 80px;
+}
+
+
+
+/*------------------------------------------------
+References
+------------------------------------------------*/
+.ref a {
+    color: #414141;
+}
+
+.ref {
+    color: #6060ff;
+}
+
+.ref-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.ref-list li p:first-of-type {
+    flex: 0 0 4%;
+    max-width: 4%;
+}
+
+.ref-list li p:last-of-type {
+    flex: 1 1 96%;
+}
+
+/*------------------------------------------------
+Appendix
+------------------------------------------------*/
+.appendix li a{
+    color: #142e7b;
+}
+
+.appendix li {
+    padding: 10px;
+}
+
+.appendix {
+    margin-bottom: 30px;
+}

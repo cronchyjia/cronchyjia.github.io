@@ -55,6 +55,13 @@ hr {
     margin: 20px 0;
 }
 
+.title {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+	font-size: 30px;
+}
+
 /*------------------------------------------------
 Typography
 ------------------------------------------------*/
@@ -92,6 +99,15 @@ Header / Global Navigation
 	top: 90px;
 	left: 75px;
 	width: 150px;
+}
+
+.logo p {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 207px;
+    top: 45px;
+    color: #414141;
 }
 
 .gn {
@@ -234,7 +250,7 @@ Projects
     left: 5%;
     width: 90%;
     height: 30%;
-    background: rgba(107, 141, 104, 0.97);
+    background: rgb(154 178 152 / 97%);
     color: #ededed;
     display: flex;
     flex-direction: column;
@@ -251,15 +267,98 @@ Projects
 }
 
 /*------------------------------------------------
-About
+Page of Projects
 ------------------------------------------------*/
-.title {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	text-align: center;
-	font-size: 30px;
+.work-grid {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 35px 20px;
+    justify-content: flex-start;
+    padding: 20px;
 }
 
+.work-item,
+.work-item-prog {
+    padding: 15px;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.in-progress-head {
+    padding: 0 50px 0 50px;
+    font-size: 25px;
+    color: #5f5c5c;
+}
+
+.completed-head {
+    padding: 50px 50px 0 50px;
+}
+
+.work-item,
+.work-item-prog h3 {
+    margin-top: 0;
+    color: #444;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.work-item,
+.work-item-prog p {
+    margin-bottom: 5px;
+    color: #666;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.work-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        0deg,
+        transparent,
+        transparent 30%,
+        rgba(255, 0, 179, 0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all .6s ease;
+    opacity: 0;
+}
+
+.work-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 179, 0.5);
+}
+
+.work-item:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
+
+/* Ensure centering of the last single item if it's in a row alone */
+.work-item:nth-child(2n+1):nth-last-child(1),
+.work-item-prog:nth-child(2n+1):nth-last-child(1) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------------------------------------------------
+About
+------------------------------------------------*/
 .about {
 	border-left: 1px solid rgba(245, 223, 214, 1);
     border-right: 1px solid rgba(245, 223, 214, 1);
