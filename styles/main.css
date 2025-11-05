@@ -57,9 +57,9 @@ hr {
 
 .title {
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 85px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
 }
 
 /*------------------------------------------------
@@ -292,14 +292,10 @@ Page of Projects
     transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.in-progress-head {
-    padding: 0 50px 0 50px;
+.completed-head {
+    padding: 0 50px 35px 50px;
     font-size: 25px;
     color: #5f5c5c;
-}
-
-.completed-head {
-    padding: 50px 50px 0 50px;
 }
 
 .work-item,
@@ -365,15 +361,18 @@ About
 }
 
 .about .robo-style {
-	margin-top: 20px;
-	font-size: 24px;
-	padding: 20px;
+    font-size: 20px;
+    padding: 30px 0 10px 0;
 }
 
 .about-section {
 	position: relative;
 	align-items: center;
-	margin-bottom: 90px;
+	margin-bottom: 100px;
+}
+
+.about-section:last-of-type {
+    padding: 30px 0 80px 0;
 }
 
 .about-section .txt-decor::after{
@@ -397,8 +396,7 @@ About
 }
 
 .img-container img {
-	margin-top: 20px;
-    width: 100%;
+    width: 85%;
     height: auto;
     border-radius: 55px;
 }
@@ -414,7 +412,7 @@ About
 .txt-container {
     flex: 0 0 45%;
     margin-left: 80px;
-    padding: 60px 10px 60px 20px;
+    padding: 0px 10px 0px 20px;
     border-left: 1px solid rgb(239 206 192);
     border-right: 1px solid rgb(239 206 192);
 }
@@ -424,26 +422,127 @@ About
 }
 
 /*------------------------------------------------
-About : My Interests
+About : Photo Wheel
 ------------------------------------------------*/
-.interests {
-	flex-direction: column;
+.banner .slider-title {
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.interests .subheading {
-	font-size: 22px;
-	font-style: italic;
-	padding-left: 60px;
+.banner {
+    width: 100%;
+    height: 92vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    top: -25px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.interests p {
-	margin: 0px 300px 55px 150px;
-    padding: 12px 10px;
-    line-height: normal;
-    border-left: 1px solid rgb(142 181 139 / 97%);
-    border-right: 1px solid rgb(142 181 139 / 97%);
+.banner .slider {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    top: 17%;
+    left: calc(50% - 120px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: transform 1s ease-in-out;
 }
 
+.banner .slider .slider-itm {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(500px);
+}
+
+.banner .slider .slider-itm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+/* Navigation buttons */
+.banner .nav {
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    background: rgb(47 38 38 / 76%);
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.banner .nav:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.banner .nav.left { 
+    left: 10px;
+}
+
+.banner .nav.right {
+    right: 10px;
+}
+
+.slider-info {
+    position: relative;
+    bottom: -290px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10%;
+}
+
+.slider-info img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slider-info #info-text {
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.slider-info #info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.slider-info #info-text p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.txt-decor-top::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    border-radius: 3px;
+    width: 111%;
+    background: rgba(245, 223, 214, 1);
+    top: 0px;
+    left: -75px;
+}
 /*------------------------------------------------
 Skills
 ------------------------------------------------*/
@@ -477,7 +576,7 @@ Footer
 ------------------------------------------------*/
 .footer{
 	position: relative;	
-	margin-top: 300px;
+	margin-top: 150px;
 	flex-direction: column;
 }
 
